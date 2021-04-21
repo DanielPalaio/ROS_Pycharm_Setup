@@ -1,4 +1,4 @@
-# ROS and Pycharm - Step by step tutorial to link ROS and Pycharm
+# ROS and Pycharm - Step by step tutorial to link Pycharm with ROS  
 
 ## Ubuntu 
 
