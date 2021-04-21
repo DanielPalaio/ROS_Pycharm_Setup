@@ -32,14 +32,22 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 > source venv/bin/activate  
 > pip install -r requirements.txt  
 
-**4.** Launch pycharm. In the Ubuntu Terminal:  
+**4.** Launch Pycharm. In the Ubuntu Terminal:  
 > pycharm-community  
 
-6. File -> Settings -> Project -> Python Interpreter -> ⚙️ -> Add -> Virtualenv Environment -> Existing environment -> <No interpreter> ... -> ~/catkin_ws/src/venv/bin/python
+**5.** Open/Create a project and select the established python environment (step **2.**) as the project **Python Interpreter** following the steps below:  
+> **File** -> **Settings** -> **Project** -> **Python Interpreter** -> **⚙️** -> **Add** -> **Virtualenv Environment** -> **Existing environment** -> **No interpreter ...** -> **~/catkin_ws/src/venv/bin/python**  
 
-7. Project Structure -> Add Content Root:	/home/user/catkin_ws/src
-							Excluded Folders: venv
-							Source Folders: src
-						/home/user/catkin_ws/devel/lib/python/dist-packages
-							Excluded Folders: ones that don't have any msg or srv files
-						/opt/ros/noetic/lib/python3/dist-packages
+**6.** Define the **Content Roots** and **Source Folders** following the steps below:  
+> **File** -> **Settings** -> **Project** -> **Python Interpreter**  
+> Content Roots:  
+>> /home/user/catkin_ws/src  
+>> /home/user/catkin_ws/devel/lib/python/dist-packages  
+>> /opt/ros/noetic/lib/python3/dist-packages  
+
+> Under /home/user/catkin_ws/src:  
+>> Excluded Folders: **venv** Package  
+>> Source Folders: Package's **src** folders   
+
+> Under /home/user/catkin_ws/devel/lib/python/dist-packages:  
+>> Excluded Folders: Packages that don´t have any **msg** or **srv** files  
